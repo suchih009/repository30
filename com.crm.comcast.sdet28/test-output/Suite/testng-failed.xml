@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Firefox browser test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="purchaseorderTest.CreatePurchaseOrderSelectAssignedToSelectUserTest">
+        <methods>
+          <include name="configBs"/>
+          <include name="configBc"/>
+          <include name="createPurchaseOrderAndAssignedToUserTest"/>
+          <include name="configAs"/>
+          <include name="configAC"/>
+          <include name="configBm"/>
+          <include name="configAm"/>
+        </methods>
+      </class> <!-- purchaseorderTest.CreatePurchaseOrderSelectAssignedToSelectUserTest -->
+      <class name="purchaseorderTest.CreatePurchaseOrderSelectAssignedtoSelectGroupsTest">
+        <methods>
+          <include name="createPurchaseOrderSelectAssignedToGroup"/>
+          <include name="configBs"/>
+          <include name="configBc"/>
+          <include name="configAs"/>
+          <include name="configAC"/>
+          <include name="configBm"/>
+          <include name="configAm"/>
+        </methods>
+      </class> <!-- purchaseorderTest.CreatePurchaseOrderSelectAssignedtoSelectGroupsTest -->
+    </classes>
+  </test> <!-- Firefox browser test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
